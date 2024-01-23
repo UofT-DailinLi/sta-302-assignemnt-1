@@ -1,7 +1,7 @@
 ---
-title: "No Evidence of Discrimination Accessing COVID-19 Immunization Clinics Across the City of Toronto"
+title: "Explore Toronto crime data: what is the relationship between crimes, ages, and gender?"
 title-block-banner: true
-abstract: "COVID-19 immunization clinic and ward profile datasets were used in the assessment of vaccine access across the City of Toronto. Based on the analysis of number of clinics and household income, no systematic discrimination was discovered as there is no correlation found between the two variables. There is a slightly positive correlation between number of clinics and population, supporting the hypothesis that COVID-19 clinic location is related to the the number of residents within its proximity. Further analysis should be performed to analyze utilization data alongside COVID-19 clinic access."
+abstract: "A number of crimes are crucial in evaluating the city’s safety in Toronto. This report aims to examine the Toronto crime report data from 2014 to 2022, including exciting variables: year, crime type, sex, and age. By exploring the trend for the number of crimes in Toronto, it shows an increasing trend overall. With further analysis to find out the relationship between the number of times and age and sex, we find men and women have a similar probability of committing crimes, and adults commit the dominant crimes."
 thanks: "Code and data supporting this analysis is available at: https://github.com/UofT-DailinLi/sta-302-assignemnt-1.git"
 author: "Ben Li"
 date: today
@@ -26,8 +26,10 @@ library(janitor)
 \newpage
 
 # Introduction
+The Toronto Crime Report records all crimes from 2014 to 2022 and analyzes the data to provide recommendations to help reduce crime rates. This report looks at the year of the crime, type of case, age, and gender. In section 2, the organized database is presented with 1110 crimes from 2014 to 2022 and a visualization of the change in the number of crimes per year from 2014 to 2022 through Figure 1. In section 3, figure 2 reveals that the predominant type of crime out of the 1110 is ASSAULT. However, figure 3 overrides common sense by revealing no significant difference between the number of crimes committed by males and the number of crimes committed by females, proving that the probability of committing a crime by males and females is not that different. Figure 4 demonstrates that out of the 1110 crimes committed, adults accounted for a significant share of crimes with a caseload of approximately 780. Further details are provided in sections 2 and 3.
 
 # Data
+
 
 ```{r echo=FALSE, message=FALSE}
 toronto_crime_clean = read_csv (file = "inputs/data/toronto_crime_clean.csv",
@@ -39,7 +41,7 @@ kable(head(toronto_crime_clean, 10), caption = "First Ten Rows of Toronto Crime 
 Table 1 shows the first ten rows of cleaned Toronto crime data. Variable "year" indicates the specific year when the crime happened, and variable "crime_type" shows the crime types, including four main types: "Sexual Violation," "Assault," "Robbery," and "Other." Variable "sex" involves male, female and unknown. Variable "age_group" contains four types: "Adult," "Child," "Unknown," and "Youth."
 
 
-# Result
+
 
 
 ```{r echo=FALSE, message=FALSE, fig.cap="Trend of total Crimes Over the Years in Toronto", fig.width=6, fig.height=3.2}
@@ -66,7 +68,7 @@ ggplot(yearly_crime_df, aes(x = Var1, y = Freq)) +
 
 Figure 1 shows an overall increase trend for the number of crimes from 2014 to 2022 in Toronto. The lowest number of crimes was around 108 in 2014. The highest number of crimes was around 133 in 2019. From the figure, we can see a considerable jump from 2016 to 2016. Even though the overall trend is increasing, the gap between the highest and lowest is about 25 crimes a year. This indicates Toronto did not do an excellent job of maintaining society's safety, but there might be other factors that affect the number of crimes, such as the total population in Toronto, the economy, the number of homeless, etc.
 
-
+# Result
 
 ```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Different Types of Crimes in Toronto", fig.width=6, fig.height=3.2}
 # Counting each type of crime
@@ -133,3 +135,5 @@ ggplot(age_group_df, aes(x = reorder(Var1, -Freq), y = Freq, fill = Var1)) +
 ```
 
 Figure 4 visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes. 
+
+# Discussion
