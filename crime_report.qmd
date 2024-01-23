@@ -6,10 +6,130 @@ thanks: "Code and data supporting this analysis is available at: https://github.
 author: "Ben Li"
 date: today
 date-format: long
-format: pdf
 editor: visual
-toc: true
+format: pdf
+toc: TRUE
 number-sections: true
 bibliography: ref.bib
 ---
 
+```{r echo=FALSE, message=FALSE}
+
+#### Workspace set-up ####
+
+## Load packages
+library(tidyverse) # a collection of data-related packages
+library(knitr) # for kable
+library(janitor)
+```
+
+\newpage
+
+# Introduction
+
+# Data
+
+```{r echo=FALSE, message=FALSE}
+toronto_crime_clean = read_csv (file = "inputs/data/toronto_crime_clean.csv",
+    show_col_types = FALSE)
+kable(head(toronto_crime_clean, 10), caption = "First Ten Rows of Toronto Crime Data")
+```
+
+
+Table 1 shows the first ten rows of cleaned Toronto crime data. Variable "year" indicates the specific year when the crime happened, and variable "crime_type" shows the crime types, including four main types: "Sexual Violation," "Assault," "Robbery," and "Other." Variable "sex" involves male, female and unknown. Variable "age_group" contains four types: "Adult," "Child," "Unknown," and "Youth."
+
+
+# Result
+
+
+```{r echo=FALSE, message=FALSE, fig.cap="Trend of total Crimes Over the Years in Toronto", fig.width=6, fig.height=3.2}
+library(ggplot2)
+
+# Counting the number of crimes each year
+yearly_crime_counts <- table(toronto_crime_clean$year)
+
+# Converting to dataframe for ggplot
+yearly_crime_df <- as.data.frame(yearly_crime_counts)
+
+# Plotting
+ggplot(yearly_crime_df, aes(x = Var1, y = Freq)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Trend of Crimes Over the Years in Toronto",
+       x = "Year",
+       y = "Number of Crimes")
+
+```
+
+
+
+
+Figure 1 shows an overall increase trend for the number of crimes from 2014 to 2022 in Toronto. The lowest number of crimes was around 108 in 2014. The highest number of crimes was around 133 in 2019. From the figure, we can see a considerable jump from 2016 to 2016. Even though the overall trend is increasing, the gap between the highest and lowest is about 25 crimes a year. This indicates Toronto did not do an excellent job of maintaining society's safety, but there might be other factors that affect the number of crimes, such as the total population in Toronto, the economy, the number of homeless, etc.
+
+
+
+```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Different Types of Crimes in Toronto", fig.width=6, fig.height=3.2}
+# Counting each type of crime
+crime_type_counts <- table(toronto_crime_clean$crime_type)
+
+# Converting to dataframe
+crime_type_df <- as.data.frame(crime_type_counts)
+
+# Plotting
+ggplot(crime_type_df, aes(x = reorder(Var1, -Freq), y = Freq)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "Distribution of Different Types of Crimes in Toronto",
+       x = "Crime Type",
+       y = "Number of Crimes")
+
+```
+
+
+
+
+
+Figure 2 illustrates the distribution of different types of crimes in Toronto. The type of crime, "assault," is much higher than the other three. The other three types of crime, "robbery," "sexual violation," and "others," share similar amounts of crimes. But assault is almost three times as the other three types of crimes. This indicates that the Toronto government should take more action to reduce the assault crime rate.
+
+
+
+
+
+```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Crimes by Sex in Toronto", fig.width=6, fig.height=3.2}
+# Counting crimes by sex
+sex_counts <- table(toronto_crime_clean$sex)
+
+# Converting to dataframe
+sex_counts_df <- as.data.frame(sex_counts)
+
+# Plotting
+ggplot(sex_counts_df, aes(x = Var1, y = Freq, fill = Var1)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Distribution of Crimes by Sex in Toronto",
+       x = "Sex",
+       y = "Number of Crimes")
+
+```
+
+Figure 3 shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around  510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes. 
+
+
+
+
+```{r echo=FALSE, message=FALSE,fig.cap="Distribution of Crimes by Age Group in Toronto", fig.width=6, fig.height=3.2}
+# Counting crimes by age group
+age_group_counts <- table(toronto_crime_clean$age_group)
+
+# Converting to dataframe for ggplot
+age_group_df <- as.data.frame(age_group_counts)
+
+# Plotting
+ggplot(age_group_df, aes(x = reorder(Var1, -Freq), y = Freq, fill = Var1)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "Distribution of Crimes by Age Group in Toronto",
+       x = "Age Group",
+       y = "Number of Crimes")
+```
+
+Figure 4 visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes. 
