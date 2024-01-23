@@ -21,28 +21,26 @@ bibliography: ref.bib
 library(tidyverse) # a collection of data-related packages
 library(knitr) # for kable
 library(janitor)
+
 ```
 
 \newpage
 
 # Introduction
+
 The Toronto Crime Report records all crimes from 2014 to 2022 and analyzes the data to provide recommendations to help reduce crime rates. This report looks at the year of the crime, type of case, age, and gender. In section 2, the organized database is presented with 1110 crimes from 2014 to 2022 and a visualization of the change in the number of crimes per year from 2014 to 2022 through Figure 1. In section 3, figure 2 reveals that the predominant type of crime out of the 1110 is ASSAULT. However, figure 3 overrides common sense by revealing no significant difference between the number of crimes committed by males and the number of crimes committed by females, proving that the probability of committing a crime by males and females is not that different. Figure 4 demonstrates that out of the 1110 crimes committed, adults accounted for a significant share of crimes with a caseload of approximately 780. Further details are provided in sections 2 and 3.
 
 # Data
+Data used in this paper are gathered from from Open Data Toronto Portal through the library `opendatatoronto`[@rOpenDataToronto]. Data was cleaned and analyzed using the open source statistically programming language R [@r], and additional packages from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `janitor` [@rJanitor],  and `knitr` [@rKnitr]. Details of the data extraction and cleaning processes are discussed in the subsections below.
 
 
 ```{r echo=FALSE, message=FALSE}
-toronto_crime_clean = read_csv (file = "inputs/data/toronto_crime_clean.csv",
-    show_col_types = FALSE)
+toronto_crime_clean =read_csv(file = "/Users/benli/sta-302-toronto_crime-report/inputs/data/toronto_crime_clean.csv", show_col_types = FALSE)
+
 kable(head(toronto_crime_clean, 10), caption = "First Ten Rows of Toronto Crime Data")
 ```
 
-
 Table 1 shows the first ten rows of cleaned Toronto crime data. Variable "year" indicates the specific year when the crime happened, and variable "crime_type" shows the crime types, including four main types: "Sexual Violation," "Assault," "Robbery," and "Other." Variable "sex" involves male, female and unknown. Variable "age_group" contains four types: "Adult," "Child," "Unknown," and "Youth."
-
-
-
-
 
 ```{r echo=FALSE, message=FALSE, fig.cap="Trend of total Crimes Over the Years in Toronto", fig.width=6, fig.height=3.2}
 library(ggplot2)
@@ -62,9 +60,6 @@ ggplot(yearly_crime_df, aes(x = Var1, y = Freq)) +
        y = "Number of Crimes")
 
 ```
-
-
-
 
 Figure 1 shows an overall increase trend for the number of crimes from 2014 to 2022 in Toronto. The lowest number of crimes was around 108 in 2014. The highest number of crimes was around 133 in 2019. From the figure, we can see a considerable jump from 2016 to 2016. Even though the overall trend is increasing, the gap between the highest and lowest is about 25 crimes a year. This indicates Toronto did not do an excellent job of maintaining society's safety, but there might be other factors that affect the number of crimes, such as the total population in Toronto, the economy, the number of homeless, etc.
 
@@ -87,15 +82,7 @@ ggplot(crime_type_df, aes(x = reorder(Var1, -Freq), y = Freq)) +
 
 ```
 
-
-
-
-
 Figure 2 illustrates the distribution of different types of crimes in Toronto. The type of crime, "assault," is much higher than the other three. The other three types of crime, "robbery," "sexual violation," and "others," share similar amounts of crimes. But assault is almost three times as the other three types of crimes. This indicates that the Toronto government should take more action to reduce the assault crime rate.
-
-
-
-
 
 ```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Crimes by Sex in Toronto", fig.width=6, fig.height=3.2}
 # Counting crimes by sex
@@ -113,10 +100,7 @@ ggplot(sex_counts_df, aes(x = Var1, y = Freq, fill = Var1)) +
 
 ```
 
-Figure 3 shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around  510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes. 
-
-
-
+Figure 3 shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around 510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes.
 
 ```{r echo=FALSE, message=FALSE,fig.cap="Distribution of Crimes by Age Group in Toronto", fig.width=6, fig.height=3.2}
 # Counting crimes by age group
@@ -134,6 +118,11 @@ ggplot(age_group_df, aes(x = reorder(Var1, -Freq), y = Freq, fill = Var1)) +
        y = "Number of Crimes")
 ```
 
-Figure 4 visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes. 
+Figure 4 visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes.
 
 # Discussion
+
+
+
+
+# Reference
