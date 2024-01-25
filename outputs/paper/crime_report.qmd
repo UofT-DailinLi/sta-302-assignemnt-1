@@ -41,7 +41,7 @@ To investigate the relationship between crime, sex and age group in Toronto, I g
 ```{r echo=FALSE, message=FALSE, label="tbl-cleaned"}
 #| tbl-cap: "First Ten Rows of Cleaned Toronto Crime Data"
 toronto_crime_clean = read_csv(
-    file = here("inputs/data/toronto_crime_clean.csv"), show_col_types = FALSE)
+    file = here("outputs/data/toronto_crime_clean.csv"), show_col_types = FALSE)
 
 kable(head(toronto_crime_clean, 10))
 
