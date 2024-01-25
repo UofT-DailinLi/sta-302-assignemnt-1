@@ -2,7 +2,7 @@
 title: "Explore Toronto crime data: Relationship between crimes, age and sex in Toronto crime statistics"
 title-block-banner: true
 abstract: "The number of crimes are crucial in evaluating the city’s safety in Toronto. This report aims to examine the Toronto crime report data from 2014 to 2022, including interested variables: year, crime type, sex, and age. By exploring the trend for the number of crimes in Toronto, it shows an increasing trend overall. With further analysis to find out the relationship between the number of times and age and sex, we find men and women have a similar probability of committing crimes, and adults commit the dominant crimes."
-thanks: "Code and data supporting this analysis is available at: https://github.com/UofT-DailinLi/sta-302-assignemnt-1.git"
+thanks: "Code and data supporting this analysis is available at: https://github.com/UofT-DailinLi/toronto-crime-report.git"
 author: "Ben Li"
 date: today
 date-format: long
