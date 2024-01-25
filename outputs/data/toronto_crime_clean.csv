@@ -1,0 +1,1111 @@
+year,crime_type,sex,age_group
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Adult
+2014,Sexual Violation,M,Child
+2014,Sexual Violation,M,Unknown
+2014,Sexual Violation,M,Youth
+2015,Assault,F,Unknown
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Unknown
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Unknown
+2015,Assault,U,Unknown
+2015,Assault,F,Adult
+2015,Assault,F,Unknown
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Unknown
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Unknown
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Unknown
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Assault,F,Adult
+2015,Robbery,M,Child
+2015,Robbery,M,Unknown
+2015,Robbery,M,Youth
+2015,Robbery,U,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Adult
+2015,Sexual Violation,F,Child
+2015,Sexual Violation,F,Unknown
+2015,Sexual Violation,F,Youth
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Adult
+2015,Sexual Violation,M,Child
+2015,Sexual Violation,M,Unknown
+2015,Sexual Violation,M,Youth
+2016,Assault,M,Unknown
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Unknown
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Unknown
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Unknown
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Unknown
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Unknown
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Unknown
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Unknown
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Unknown
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Unknown
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Unknown
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Unknown
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Adult
+2014,Assault,F,Child
+2014,Assault,F,Unknown
+2014,Assault,F,Youth
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Adult
+2014,Assault,M,Child
+2014,Assault,M,Unknown
+2014,Assault,M,Youth
+2014,Other,F,Adult
+2014,Other,F,Adult
+2014,Other,F,Adult
+2014,Other,F,Adult
+2014,Other,F,Adult
+2014,Other,F,Adult
+2014,Other,F,Child
+2014,Other,F,Unknown
+2014,Other,F,Youth
+2014,Other,M,Adult
+2014,Other,M,Adult
+2014,Other,M,Adult
+2014,Other,M,Adult
+2014,Other,M,Adult
+2014,Other,M,Adult
+2014,Other,M,Child
+2014,Other,M,Unknown
+2014,Other,M,Youth
+2014,Other,U,Unknown
+2014,Robbery,F,Adult
+2014,Robbery,F,Adult
+2014,Robbery,F,Adult
+2014,Robbery,F,Adult
+2014,Robbery,F,Adult
+2014,Robbery,F,Adult
+2014,Robbery,F,Child
+2014,Robbery,F,Unknown
+2014,Robbery,F,Youth
+2014,Robbery,M,Adult
+2014,Robbery,M,Adult
+2014,Robbery,M,Adult
+2014,Robbery,M,Adult
+2014,Robbery,M,Adult
+2014,Robbery,M,Adult
+2014,Robbery,M,Child
+2014,Robbery,M,Unknown
+2014,Robbery,M,Youth
+2014,Robbery,U,Adult
+2014,Robbery,U,Adult
+2014,Robbery,U,Unknown
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Adult
+2014,Sexual Violation,F,Child
+2014,Sexual Violation,F,Unknown
+2014,Sexual Violation,F,Youth
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Unknown
+2016,Assault,M,Youth
+2016,Assault,U,Adult
+2016,Assault,U,Adult
+2016,Assault,U,Unknown
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Adult
+2016,Assault,F,Child
+2016,Assault,F,Unknown
+2016,Assault,F,Youth
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Adult
+2016,Assault,M,Child
+2016,Assault,M,Unknown
+2016,Assault,M,Youth
+2016,Assault,U,Adult
+2016,Assault,U,Adult
+2016,Assault,U,Adult
+2016,Assault,U,Adult
+2016,Assault,U,Unknown
+2016,Other,F,Adult
+2016,Other,F,Adult
+2016,Other,F,Adult
+2016,Other,F,Adult
+2016,Other,F,Adult
+2016,Other,F,Adult
+2016,Other,F,Child
+2016,Other,F,Unknown
+2016,Other,F,Youth
+2016,Other,M,Adult
+2016,Other,M,Adult
+2016,Other,M,Adult
+2016,Other,M,Adult
+2016,Other,M,Adult
+2016,Other,M,Adult
+2016,Other,M,Child
+2016,Other,M,Unknown
+2016,Other,M,Youth
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Unknown
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Unknown
+2017,Assault,U,Unknown
+2017,Assault,F,Adult
+2017,Assault,F,Unknown
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Unknown
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Unknown
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Unknown
+2017,Assault,M,Youth
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Adult
+2017,Assault,F,Child
+2017,Assault,F,Unknown
+2017,Assault,F,Youth
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Adult
+2015,Assault,F,Child
+2015,Assault,F,Unknown
+2015,Assault,F,Youth
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Adult
+2015,Assault,M,Child
+2015,Assault,M,Unknown
+2015,Assault,M,Youth
+2015,Assault,U,Adult
+2015,Assault,U,Adult
+2015,Other,F,Adult
+2015,Other,F,Adult
+2015,Other,F,Adult
+2015,Other,F,Adult
+2015,Other,F,Adult
+2015,Other,F,Adult
+2015,Other,F,Child
+2015,Other,F,Unknown
+2015,Other,F,Youth
+2015,Other,M,Adult
+2015,Other,M,Adult
+2015,Other,M,Adult
+2015,Other,M,Adult
+2015,Other,M,Adult
+2015,Other,M,Adult
+2015,Other,M,Child
+2015,Other,M,Unknown
+2015,Other,M,Youth
+2015,Other,U,Adult
+2015,Other,U,Adult
+2015,Other,U,Unknown
+2015,Robbery,F,Adult
+2015,Robbery,F,Adult
+2015,Robbery,F,Adult
+2015,Robbery,F,Adult
+2015,Robbery,F,Adult
+2015,Robbery,F,Adult
+2015,Robbery,F,Child
+2015,Robbery,F,Unknown
+2015,Robbery,F,Youth
+2015,Robbery,M,Adult
+2015,Robbery,M,Adult
+2015,Robbery,M,Adult
+2015,Robbery,M,Adult
+2015,Robbery,M,Adult
+2015,Robbery,M,Adult
+2016,Other,U,Adult
+2016,Other,U,Adult
+2016,Other,U,Adult
+2016,Other,U,Adult
+2016,Other,U,Unknown
+2016,Robbery,F,Adult
+2016,Robbery,F,Adult
+2016,Robbery,F,Adult
+2016,Robbery,F,Adult
+2016,Robbery,F,Adult
+2016,Robbery,F,Adult
+2016,Robbery,F,Child
+2016,Robbery,F,Unknown
+2016,Robbery,F,Youth
+2016,Robbery,M,Adult
+2016,Robbery,M,Adult
+2016,Robbery,M,Adult
+2016,Robbery,M,Adult
+2016,Robbery,M,Adult
+2016,Robbery,M,Adult
+2016,Robbery,M,Child
+2016,Robbery,M,Unknown
+2016,Robbery,M,Youth
+2016,Robbery,U,Adult
+2016,Robbery,U,Adult
+2016,Robbery,U,Youth
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Adult
+2016,Sexual Violation,F,Child
+2016,Sexual Violation,F,Unknown
+2016,Sexual Violation,F,Youth
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Adult
+2016,Sexual Violation,M,Child
+2016,Sexual Violation,M,Unknown
+2016,Sexual Violation,M,Youth
+2016,Sexual Violation,U,Adult
+2016,Sexual Violation,U,Youth
+2017,Assault,F,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Unknown
+2017,Assault,F,Adult
+2017,Assault,M,Adult
+2017,Assault,M,Child
+2017,Assault,M,Unknown
+2017,Assault,M,Youth
+2017,Assault,U,Adult
+2017,Assault,U,Adult
+2017,Assault,U,Child
+2017,Assault,U,Unknown
+2017,Other,F,Adult
+2017,Other,F,Adult
+2017,Other,F,Adult
+2017,Other,F,Adult
+2017,Other,F,Adult
+2017,Other,F,Adult
+2017,Other,F,Child
+2017,Other,F,Unknown
+2017,Other,F,Youth
+2017,Other,M,Adult
+2017,Other,M,Adult
+2017,Other,M,Adult
+2017,Other,M,Adult
+2017,Other,M,Adult
+2017,Other,M,Adult
+2017,Other,M,Child
+2017,Other,M,Unknown
+2017,Other,M,Youth
+2017,Other,U,Adult
+2017,Other,U,Adult
+2017,Other,U,Unknown
+2017,Robbery,F,Adult
+2017,Sexual Violation,F,Adult
+2017,Robbery,F,Adult
+2017,Robbery,F,Adult
+2017,Robbery,F,Adult
+2017,Robbery,F,Adult
+2017,Robbery,F,Adult
+2017,Robbery,F,Child
+2017,Robbery,F,Unknown
+2017,Robbery,F,Youth
+2017,Robbery,M,Adult
+2017,Robbery,M,Adult
+2017,Robbery,M,Adult
+2017,Robbery,M,Adult
+2017,Robbery,M,Adult
+2017,Robbery,M,Adult
+2017,Robbery,M,Child
+2017,Robbery,M,Unknown
+2017,Robbery,M,Youth
+2017,Robbery,U,Unknown
+2017,Robbery,U,Youth
+2017,Sexual Violation,F,Adult
+2017,Sexual Violation,F,Adult
+2017,Sexual Violation,F,Adult
+2017,Sexual Violation,F,Adult
+2017,Sexual Violation,F,Adult
+2017,Sexual Violation,F,Child
+2017,Sexual Violation,F,Unknown
+2017,Sexual Violation,F,Youth
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Adult
+2017,Sexual Violation,M,Child
+2017,Sexual Violation,M,Unknown
+2017,Sexual Violation,M,Youth
+2017,Sexual Violation,U,Unknown
+2018,Assault,M,Unknown
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Unknown
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Unknown
+2018,Assault,U,Unknown
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Unknown
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Unknown
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Unknown
+2018,Assault,F,Youth
+2018,Assault,M,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Unknown
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Unknown
+2020,Assault,U,Unknown
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Child
+2020,Assault,F,Unknown
+2020,Assault,F,Youth
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Child
+2020,Assault,M,Unknown
+2020,Assault,M,Youth
+2020,Assault,U,Adult
+2020,Assault,U,Adult
+2020,Assault,U,Adult
+2020,Assault,U,Adult
+2020,Assault,U,Adult
+2020,Assault,U,Adult
+2020,Assault,U,Unknown
+2020,Assault,U,Youth
+2020,Other,F,Adult
+2020,Other,F,Adult
+2020,Other,F,Adult
+2020,Other,F,Adult
+2020,Other,F,Adult
+2020,Other,F,Adult
+2020,Other,F,Child
+2020,Other,F,Unknown
+2020,Other,F,Youth
+2020,Other,M,Adult
+2019,Assault,F,Unknown
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Unknown
+2019,Assault,U,Unknown
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Unknown
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Unknown
+2019,Assault,U,Unknown
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Unknown
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Unknown
+2019,Assault,U,Unknown
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Child
+2019,Assault,F,Unknown
+2019,Assault,F,Youth
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Adult
+2019,Assault,M,Child
+2019,Assault,M,Unknown
+2019,Assault,M,Youth
+2019,Assault,U,Adult
+2019,Assault,U,Adult
+2019,Assault,U,Adult
+2019,Assault,U,Child
+2019,Assault,U,Unknown
+2019,Other,F,Adult
+2019,Other,F,Adult
+2019,Other,F,Adult
+2019,Other,F,Adult
+2019,Other,F,Adult
+2019,Other,F,Adult
+2019,Other,F,Child
+2019,Other,F,Unknown
+2019,Other,F,Youth
+2019,Other,M,Adult
+2019,Other,M,Adult
+2019,Other,M,Adult
+2019,Other,M,Adult
+2019,Other,M,Adult
+2019,Other,M,Adult
+2019,Other,M,Child
+2019,Other,M,Unknown
+2019,Other,M,Youth
+2019,Other,U,Adult
+2019,Other,U,Unknown
+2019,Robbery,F,Adult
+2019,Robbery,F,Adult
+2019,Robbery,F,Adult
+2019,Robbery,F,Adult
+2019,Robbery,F,Adult
+2019,Robbery,F,Adult
+2019,Robbery,F,Child
+2019,Robbery,F,Unknown
+2019,Robbery,F,Youth
+2019,Robbery,M,Adult
+2019,Robbery,M,Adult
+2019,Robbery,M,Adult
+2019,Robbery,M,Adult
+2019,Robbery,M,Adult
+2019,Robbery,M,Adult
+2019,Robbery,M,Child
+2019,Robbery,M,Unknown
+2019,Robbery,M,Youth
+2019,Robbery,U,Adult
+2019,Robbery,U,Adult
+2019,Robbery,U,Adult
+2019,Robbery,U,Adult
+2018,Assault,M,Adult
+2018,Other,U,Unknown
+2018,Robbery,F,Adult
+2018,Robbery,F,Adult
+2018,Robbery,F,Adult
+2018,Robbery,F,Adult
+2018,Robbery,F,Adult
+2018,Robbery,F,Adult
+2018,Robbery,F,Child
+2018,Robbery,F,Unknown
+2018,Robbery,F,Youth
+2018,Robbery,M,Adult
+2018,Robbery,M,Adult
+2018,Robbery,M,Adult
+2018,Robbery,M,Adult
+2018,Robbery,M,Adult
+2018,Robbery,M,Adult
+2018,Robbery,M,Child
+2018,Robbery,M,Unknown
+2018,Robbery,M,Youth
+2018,Robbery,U,Adult
+2019,Robbery,U,Unknown
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Adult
+2018,Sexual Violation,F,Child
+2018,Sexual Violation,F,Unknown
+2018,Sexual Violation,F,Youth
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Adult
+2018,Sexual Violation,M,Child
+2018,Sexual Violation,M,Unknown
+2018,Sexual Violation,M,Youth
+2018,Sexual Violation,U,Adult
+2018,Sexual Violation,U,Adult
+2018,Sexual Violation,U,Child
+2018,Sexual Violation,U,Unknown
+2019,Assault,F,Unknown
+2019,Assault,M,Unknown
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2019,Assault,F,Adult
+2018,Assault,M,Adult
+2019,Robbery,U,Youth
+2018,Assault,M,Adult
+2019,Sexual Violation,F,Adult
+2018,Assault,M,Adult
+2019,Sexual Violation,F,Adult
+2018,Assault,M,Adult
+2019,Sexual Violation,F,Adult
+2018,Assault,M,Unknown
+2019,Sexual Violation,F,Adult
+2018,Assault,F,Adult
+2019,Sexual Violation,F,Adult
+2018,Assault,F,Adult
+2019,Sexual Violation,F,Adult
+2018,Assault,F,Adult
+2019,Sexual Violation,F,Child
+2018,Assault,F,Adult
+2019,Sexual Violation,F,Unknown
+2019,Sexual Violation,F,Youth
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Adult
+2019,Sexual Violation,M,Child
+2019,Sexual Violation,M,Unknown
+2019,Sexual Violation,M,Youth
+2019,Sexual Violation,U,Child
+2019,Sexual Violation,U,Unknown
+2019,Sexual Violation,U,Youth
+2020,Assault,M,Adult
+2020,Assault,M,Unknown
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Unknown
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Unknown
+2020,Assault,U,Unknown
+2020,Assault,F,Adult
+2020,Assault,F,Adult
+2020,Assault,F,Unknown
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Adult
+2020,Assault,M,Unknown
+2020,Assault,U,Unknown
+2018,Assault,F,Adult
+2018,Assault,F,Adult
+2018,Assault,F,Child
+2018,Assault,F,Unknown
+2018,Assault,F,Youth
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Adult
+2018,Assault,M,Child
+2018,Assault,M,Unknown
+2018,Assault,M,Youth
+2018,Assault,U,Adult
+2018,Assault,U,Adult
+2018,Assault,U,Adult
+2018,Assault,U,Unknown
+2018,Other,F,Adult
+2018,Other,F,Adult
+2018,Other,F,Adult
+2018,Other,F,Adult
+2018,Other,F,Adult
+2018,Other,F,Adult
+2018,Other,F,Child
+2018,Other,F,Unknown
+2018,Other,F,Youth
+2018,Other,M,Adult
+2018,Other,M,Adult
+2018,Other,M,Adult
+2018,Other,M,Adult
+2018,Other,M,Adult
+2018,Other,M,Adult
+2018,Other,M,Child
+2018,Other,M,Unknown
+2018,Other,M,Youth
+2018,Other,U,Adult
+2018,Other,U,Adult
+2018,Other,U,Adult
+2018,Other,U,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Child
+2021,Assault,M,Unknown
+2021,Assault,M,Youth
+2021,Assault,U,Adult
+2021,Assault,U,Adult
+2021,Assault,U,Adult
+2021,Assault,U,Adult
+2021,Assault,U,Adult
+2021,Assault,U,Unknown
+2021,Assault,U,Youth
+2021,Other,F,Adult
+2021,Other,F,Adult
+2021,Other,F,Adult
+2021,Other,F,Adult
+2021,Other,F,Adult
+2021,Other,F,Adult
+2021,Other,F,Child
+2021,Other,F,Unknown
+2021,Other,F,Youth
+2021,Other,M,Adult
+2021,Other,M,Adult
+2021,Other,M,Adult
+2021,Other,M,Adult
+2021,Other,M,Adult
+2021,Other,M,Adult
+2021,Other,M,Child
+2021,Other,M,Unknown
+2021,Other,M,Youth
+2021,Other,U,Adult
+2021,Other,U,Adult
+2021,Other,U,Adult
+2021,Other,U,Unknown
+2021,Other,U,Youth
+2021,Robbery,F,Adult
+2021,Robbery,F,Adult
+2021,Robbery,F,Adult
+2021,Robbery,F,Adult
+2021,Robbery,F,Adult
+2021,Robbery,F,Adult
+2021,Robbery,F,Child
+2021,Robbery,F,Unknown
+2021,Robbery,F,Youth
+2021,Robbery,M,Adult
+2021,Robbery,M,Adult
+2021,Robbery,M,Adult
+2021,Robbery,M,Adult
+2021,Robbery,M,Adult
+2021,Robbery,M,Adult
+2021,Robbery,M,Child
+2022,Assault,F,Adult
+2020,Other,M,Adult
+2022,Assault,F,Unknown
+2020,Other,M,Adult
+2022,Assault,M,Adult
+2020,Other,M,Adult
+2022,Assault,M,Adult
+2020,Other,M,Adult
+2022,Assault,M,Adult
+2020,Other,M,Adult
+2022,Assault,M,Adult
+2020,Other,M,Child
+2022,Assault,M,Adult
+2020,Other,M,Unknown
+2022,Assault,M,Adult
+2020,Other,M,Youth
+2022,Assault,M,Unknown
+2020,Other,U,Adult
+2022,Assault,F,Adult
+2020,Other,U,Adult
+2022,Assault,F,Adult
+2020,Other,U,Adult
+2022,Assault,F,Adult
+2020,Other,U,Child
+2022,Assault,F,Adult
+2020,Other,U,Unknown
+2022,Assault,F,Adult
+2020,Other,U,Youth
+2022,Assault,F,Adult
+2020,Robbery,F,Adult
+2022,Assault,F,Child
+2020,Robbery,F,Adult
+2022,Assault,F,Unknown
+2020,Robbery,F,Adult
+2022,Assault,F,Youth
+2020,Robbery,F,Adult
+2022,Assault,M,Adult
+2020,Robbery,F,Adult
+2022,Assault,M,Adult
+2020,Robbery,F,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Child
+2022,Assault,M,Unknown
+2022,Assault,M,Youth
+2022,Assault,U,Adult
+2022,Assault,U,Adult
+2022,Assault,U,Adult
+2022,Assault,U,Adult
+2022,Assault,U,Adult
+2022,Assault,U,Adult
+2022,Assault,U,Unknown
+2022,Assault,U,Youth
+2022,Other,F,Adult
+2022,Other,F,Adult
+2022,Other,F,Adult
+2022,Other,F,Adult
+2022,Other,F,Adult
+2022,Other,F,Adult
+2022,Other,F,Child
+2022,Other,F,Unknown
+2022,Other,F,Youth
+2022,Other,M,Adult
+2022,Other,M,Adult
+2022,Other,M,Adult
+2022,Other,M,Adult
+2022,Other,M,Adult
+2022,Other,M,Adult
+2022,Other,M,Child
+2022,Other,M,Unknown
+2020,Robbery,F,Child
+2020,Robbery,F,Unknown
+2020,Robbery,F,Youth
+2020,Robbery,M,Adult
+2020,Robbery,M,Adult
+2020,Robbery,M,Adult
+2020,Robbery,M,Adult
+2020,Robbery,M,Adult
+2020,Robbery,M,Adult
+2020,Robbery,M,Child
+2020,Robbery,M,Unknown
+2020,Robbery,M,Youth
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Adult
+2020,Sexual Violation,F,Child
+2020,Sexual Violation,F,Unknown
+2020,Sexual Violation,F,Youth
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Adult
+2020,Sexual Violation,M,Child
+2020,Sexual Violation,M,Unknown
+2020,Sexual Violation,M,Youth
+2020,Sexual Violation,U,Adult
+2020,Sexual Violation,U,Unknown
+2021,Robbery,M,Unknown
+2021,Robbery,M,Youth
+2021,Robbery,U,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Adult
+2021,Sexual Violation,F,Child
+2021,Sexual Violation,F,Unknown
+2021,Sexual Violation,F,Youth
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Adult
+2021,Sexual Violation,M,Child
+2021,Sexual Violation,M,Unknown
+2021,Sexual Violation,M,Youth
+2021,Sexual Violation,U,Adult
+2021,Sexual Violation,U,Child
+2021,Sexual Violation,U,Unknown
+2022,Assault,M,Adult
+2022,Assault,M,Unknown
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Unknown
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Unknown
+2022,Assault,U,Unknown
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Unknown
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Adult
+2022,Assault,M,Unknown
+2022,Assault,U,Unknown
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2022,Assault,F,Adult
+2021,Assault,M,Unknown
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Unknown
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Unknown
+2021,Assault,U,Unknown
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Unknown
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Unknown
+2021,Assault,U,Unknown
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Unknown
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Unknown
+2021,Assault,U,Unknown
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Adult
+2021,Assault,F,Child
+2021,Assault,F,Unknown
+2021,Assault,F,Youth
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2021,Assault,M,Adult
+2022,Other,M,Youth
+2022,Other,U,Adult
+2022,Other,U,Adult
+2022,Other,U,Adult
+2022,Other,U,Adult
+2022,Other,U,Unknown
+2022,Robbery,F,Adult
+2022,Robbery,F,Adult
+2022,Robbery,F,Adult
+2022,Robbery,F,Adult
+2022,Robbery,F,Adult
+2022,Robbery,F,Adult
+2022,Robbery,F,Child
+2022,Robbery,F,Unknown
+2022,Robbery,F,Youth
+2022,Robbery,M,Adult
+2022,Robbery,M,Adult
+2022,Robbery,M,Adult
+2022,Robbery,M,Adult
+2022,Robbery,M,Adult
+2022,Robbery,M,Adult
+2022,Robbery,M,Child
+2022,Robbery,M,Unknown
+2022,Robbery,M,Youth
+2022,Robbery,U,Adult
+2022,Robbery,U,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Adult
+2022,Sexual Violation,F,Child
+2022,Sexual Violation,F,Unknown
+2022,Sexual Violation,F,Youth
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Adult
+2022,Sexual Violation,M,Child
+2022,Sexual Violation,M,Unknown
+2022,Sexual Violation,M,Youth
+2022,Sexual Violation,U,Adult
+2022,Sexual Violation,U,Adult
+2022,Sexual Violation,U,Adult
+2022,Sexual Violation,U,Child
+2022,Sexual Violation,U,Unknown
+2022,Sexual Violation,U,Youth
