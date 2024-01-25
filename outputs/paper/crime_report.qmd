@@ -1,7 +1,7 @@
 ---
-title: "Explore Toronto crime data: what is the relationship between crimes, ages, and gender?"
+title: "Explore Toronto crime data: Relationship between crimes, age and sex in Toronto crime statistics"
 title-block-banner: true
-abstract: "A number of crimes are crucial in evaluating the city’s safety in Toronto. This report aims to examine the Toronto crime report data from 2014 to 2022, including exciting variables: year, crime type, sex, and age. By exploring the trend for the number of crimes in Toronto, it shows an increasing trend overall. With further analysis to find out the relationship between the number of times and age and sex, we find men and women have a similar probability of committing crimes, and adults commit the dominant crimes."
+abstract: "The number of crimes are crucial in evaluating the city’s safety in Toronto. This report aims to examine the Toronto crime report data from 2014 to 2022, including interested variables: year, crime type, sex, and age. By exploring the trend for the number of crimes in Toronto, it shows an increasing trend overall. With further analysis to find out the relationship between the number of times and age and sex, we find men and women have a similar probability of committing crimes, and adults commit the dominant crimes."
 thanks: "Code and data supporting this analysis is available at: https://github.com/UofT-DailinLi/sta-302-assignemnt-1.git"
 author: "Ben Li"
 date: today
@@ -28,23 +28,26 @@ library(janitor)
 
 # Introduction
 
-The Toronto Crime Report records all crimes from 2014 to 2022 and analyzes the data to provide recommendations to help reduce crime rates. This report looks at the year of the crime, type of case, age, and gender. In section 2, the organized database is presented with 1110 crimes from 2014 to 2022 and a visualization of the change in the number of crimes per year from 2014 to 2022 through Figure 1. In section 3, figure 2 reveals that the predominant type of crime out of the 1110 is ASSAULT. However, figure 3 overrides common sense by revealing no significant difference between the number of crimes committed by males and the number of crimes committed by females, proving that the probability of committing a crime by males and females is not that different. Figure 4 demonstrates that out of the 1110 crimes committed, adults accounted for a significant share of crimes with a caseload of approximately 780. Further details are provided in sections 2 and 3.
+The Toronto Crime Report records all crimes from 2014 to 2022 and analyzes the data to provide recommendations to help reduce crime rates. This report looks at the year of the crime, type of case, age, and gender. In section 2, the organized database is presented with 1110 crimes from 2014 to 2022 and a visualization of the change in the number of crimes per year from 2014 to 2022 through Figure 1. 
+
+In the result section, we want to examine further whether men are more likely to commit crimes than women. In result section, figure 2 reveals that the predominant type of crime out of the 1110 is ASSAULT. However, figure 3 overrides common sense by revealing no significant difference between the number of crimes committed by males and the number of crimes committed by females, proving that the probability of committing a crime by males and females is not that different. Figure 4 demonstrates that out of the 1110 crimes committed, adults accounted for a significant share of crimes with a caseload of approximately 780. Further details are provided in sections 2 and 3.
 
 # Data
-Data used in this paper are gathered from from Open Data Toronto Portal through the library `opendatatoronto`[@rOpenDataToronto]. Data was cleaned and analyzed using the open source statistically programming language R [@r], and additional packages from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `janitor` [@rJanitor],  and `knitr` [@rKnitr]. Details of the data extraction and cleaning processes are discussed in the subsections below.
+To investigate the relationship between crime, sex and age group in Toronto, I gathered the dataset “Toronto crime report” from the Toronto Open Data Portal[@rOpenDataToronto]. The dataset includes all crimes that happened in Toronto from 2014 to 2022. It includes 1110 observations and nine variables; there are four interested variables we will choose to do further analysis, “year,” “crime type,” “sex,” and “age group.” Data was cleaned and analyzed using the open source statistically programming language R [@r], and additional packages from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `janitor` [@rJanitor], and `knitr` [@rKnitr]. The cleaned dataset contains 1110 observations, and four variables will be shown below.
 
+```{r echo=FALSE, message=FALSE, label="tbl-cleaned"}
+#| tbl-cap: "First Ten Rows of Cleaned Toronto Crime Data"
+toronto_crime_clean = read_csv(file = "/Users/benli/sta-302-toronto_crime-report/inputs/data/toronto_crime_clean.csv", show_col_types = FALSE)
 
-```{r echo=FALSE, message=FALSE}
-toronto_crime_clean =read_csv(file = "/Users/benli/sta-302-toronto_crime-report/inputs/data/toronto_crime_clean.csv", show_col_types = FALSE)
+kable(head(toronto_crime_clean, 10))
 
-kable(head(toronto_crime_clean, 10), caption = "First Ten Rows of Toronto Crime Data")
 ```
 
-Table 1 shows the first ten rows of cleaned Toronto crime data. Variable "year" indicates the specific year when the crime happened, and variable "crime_type" shows the crime types, including four main types: "Sexual Violation," "Assault," "Robbery," and "Other." Variable "sex" involves male, female and unknown. Variable "age_group" contains four types: "Adult," "Child," "Unknown," and "Youth."
+@tbl-cleaned shows the first ten rows of cleaned Toronto crime data. Variable "year" indicates the specific year when the crime happened, and variable "crime_type" shows the crime types, including four main types: "Sexual Violation," "Assault," "Robbery," and "Other." Variable "sex" involves male, female and unknown. Variable "age_group" contains four types: "Adult," "Child," "Unknown," and "Youth."
 
-```{r echo=FALSE, message=FALSE, fig.cap="Trend of total Crimes Over the Years in Toronto", fig.width=6, fig.height=3.2}
+```{r echo=FALSE, message=FALSE, fig.cap="Trend of total Crimes Over the Years in Toronto", fig.width=5, fig.height=3,label= "fig-crime-trend"}
 library(ggplot2)
-
+knitr::opts_chunk$set(fig.pos = 'H')
 # Counting the number of crimes each year
 yearly_crime_counts <- table(toronto_crime_clean$year)
 
@@ -55,17 +58,16 @@ yearly_crime_df <- as.data.frame(yearly_crime_counts)
 ggplot(yearly_crime_df, aes(x = Var1, y = Freq)) +
   geom_line() +
   geom_point() +
-  labs(title = "Trend of Crimes Over the Years in Toronto",
-       x = "Year",
-       y = "Number of Crimes")
+  labs(x = "Year", y = "Number of Crimes")
 
 ```
 
-Figure 1 shows an overall increase trend for the number of crimes from 2014 to 2022 in Toronto. The lowest number of crimes was around 108 in 2014. The highest number of crimes was around 133 in 2019. From the figure, we can see a considerable jump from 2016 to 2016. Even though the overall trend is increasing, the gap between the highest and lowest is about 25 crimes a year. This indicates Toronto did not do an excellent job of maintaining society's safety, but there might be other factors that affect the number of crimes, such as the total population in Toronto, the economy, the number of homeless, etc.
+@fig-crime-trend shows an overall increase trend for the number of crimes from 2014 to 2022 in Toronto. The lowest number of crimes was around 108 in 2014. The highest number of crimes was around 133 in 2019. From the figure, we can see a considerable jump from 2016 to 2016. Even though the overall trend is increasing, the gap between the highest and lowest is about 25 crimes a year. This indicates Toronto did not do an excellent job of maintaining society's safety, but there might be other factors that affect the number of crimes, such as the total population in Toronto, the economy, the number of homeless, etc.
 
 # Result
 
-```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Different Types of Crimes in Toronto", fig.width=6, fig.height=3.2}
+```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Different Types of Crimes in Toronto", fig.width=5, fig.height=3,label= "fig-type-crime"}
+knitr::opts_chunk$set(fig.pos = 'H')
 # Counting each type of crime
 crime_type_counts <- table(toronto_crime_clean$crime_type)
 
@@ -76,15 +78,18 @@ crime_type_df <- as.data.frame(crime_type_counts)
 ggplot(crime_type_df, aes(x = reorder(Var1, -Freq), y = Freq)) +
   geom_bar(stat = "identity") +
   coord_flip() +
-  labs(title = "Distribution of Different Types of Crimes in Toronto",
-       x = "Crime Type",
-       y = "Number of Crimes")
+  labs(x = "Crime Type", y = "Number of Crimes")
 
 ```
 
-Figure 2 illustrates the distribution of different types of crimes in Toronto. The type of crime, "assault," is much higher than the other three. The other three types of crime, "robbery," "sexual violation," and "others," share similar amounts of crimes. But assault is almost three times as the other three types of crimes. This indicates that the Toronto government should take more action to reduce the assault crime rate.
 
-```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Crimes by Sex in Toronto", fig.width=6, fig.height=3.2}
+@fig-type-crime illustrates the distribution of different types of crimes in Toronto. The type of crime, "assault," is much higher than the other three. The other three types of crime, "robbery," "sexual violation," and "others," share similar amounts of crimes. But assault is almost three times as the other three types of crimes. This indicates that the Toronto government should take more action to reduce the assault crime rate.
+
+
+
+
+```{r echo=FALSE, message=FALSE, fig.cap="Distribution of Crimes by Sex in Toronto", fig.width=5, fig.height=3, label= "fig-crime-by-sex"}
+knitr::opts_chunk$set(fig.pos = 'H')
 # Counting crimes by sex
 sex_counts <- table(toronto_crime_clean$sex)
 
@@ -94,15 +99,17 @@ sex_counts_df <- as.data.frame(sex_counts)
 # Plotting
 ggplot(sex_counts_df, aes(x = Var1, y = Freq, fill = Var1)) +
   geom_bar(stat = "identity") +
-  labs(title = "Distribution of Crimes by Sex in Toronto",
-       x = "Sex",
-       y = "Number of Crimes")
+  labs(x = "Sex", y = "Number of Crimes")
 
 ```
 
-Figure 3 shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around 510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes.
 
-```{r echo=FALSE, message=FALSE,fig.cap="Distribution of Crimes by Age Group in Toronto", fig.width=6, fig.height=3.2}
+
+
+@fig-crime-by-sex shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around 510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes.
+
+```{r echo=FALSE, message=FALSE,fig.cap="Distribution of Crimes by Age Group in Toronto", fig.width=6, fig.height=3, label= "fig-crime-by-age"}
+knitr::opts_chunk$set(fig.pos = 'H')
 # Counting crimes by age group
 age_group_counts <- table(toronto_crime_clean$age_group)
 
@@ -113,16 +120,14 @@ age_group_df <- as.data.frame(age_group_counts)
 ggplot(age_group_df, aes(x = reorder(Var1, -Freq), y = Freq, fill = Var1)) +
   geom_bar(stat = "identity") +
   coord_flip() +
-  labs(title = "Distribution of Crimes by Age Group in Toronto",
-       x = "Age Group",
-       y = "Number of Crimes")
+  labs(x = "Age Group", y = "Number of Crimes")
 ```
 
-Figure 4 visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes.
+@fig-crime-by-age visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes.
 
 # Discussion
+By analyzing the database of Toronto crime reports, we find no significant difference in the probability of committing crimes between males and females. At the same time, adults have the highest percentage of crimes. Looking at Figure 1, we have found out that the number of crimes in Toronto is in a general increasing trend, which shows that the policing in Toronto is not under effective control. Looking at Figure 3, we can find that the total number of crime cases for boys and girls is roughly similar from 2014 to 2022, which shows that boys do not have a higher probability of committing crimes than girls. Future studies can consider the influence of other factors on crime cases.
 
-
-
+Figure 4 gives us a deeper understanding of the distribution of different age groups in crime cases. Adults dominate the number of crimes, but juvenile crime is not insignificant, with the eight-year total of crimes committed by children and youth from 2014 to 2022 being about 100 each. This shows the prevalence of juvenile crime. By paying attention to the mental health of adolescents, such as family conflicts and academic pressures, and providing them with the necessary help, juvenile delinquency can be prevented. Also, the government can take measures such as increasing investment in education, providing psychological counselling, and strengthening supervision.
 
 # Reference
