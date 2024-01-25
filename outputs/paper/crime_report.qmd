@@ -21,23 +21,27 @@ bibliography: ref.bib
 library(tidyverse) # a collection of data-related packages
 library(knitr) # for kable
 library(janitor)
-
+library(here)
 ```
 
 \newpage
 
 # Introduction
 
+As one of the largest cities in Canada, maintaining security in Toronto has become a top priority for the government. Toronto's large size and population can lead to a high crime rate. The overall economic downturn due to recent epidemics and the increasing number of bankruptcies and homelessness may also be contributing to the high crime rate. According to Helen Boritch[@boritch1990century], Current research has not focused well on the relationship between gender roles as well as crime rates, and the rise in female crime in Toronto. This paper aims to examine the relationship between the number of crimes and gender and age groups.
+
+
 The Toronto Crime Report records all crimes from 2014 to 2022 and analyzes the data to provide recommendations to help reduce crime rates. This report looks at the year of the crime, type of case, age, and gender. In section 2, the organized database is presented with 1110 crimes from 2014 to 2022 and a visualization of the change in the number of crimes per year from 2014 to 2022 through Figure 1. 
 
 In the result section, we want to examine further whether men are more likely to commit crimes than women. In result section, figure 2 reveals that the predominant type of crime out of the 1110 is ASSAULT. However, figure 3 overrides common sense by revealing no significant difference between the number of crimes committed by males and the number of crimes committed by females, proving that the probability of committing a crime by males and females is not that different. Figure 4 demonstrates that out of the 1110 crimes committed, adults accounted for a significant share of crimes with a caseload of approximately 780. Further details are provided in sections 2 and 3.
 
 # Data
-To investigate the relationship between crime, sex and age group in Toronto, I gathered the dataset “Toronto crime report” from the Toronto Open Data Portal[@rOpenDataToronto]. The dataset includes all crimes that happened in Toronto from 2014 to 2022. It includes 1110 observations and nine variables; there are four interested variables we will choose to do further analysis, “year,” “crime type,” “sex,” and “age group.” Data was cleaned and analyzed using the open source statistically programming language R [@r], and additional packages from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `janitor` [@rJanitor], and `knitr` [@rKnitr]. The cleaned dataset contains 1110 observations, and four variables will be shown below.
+To investigate the relationship between crime, sex and age group in Toronto, I gathered the dataset “Toronto crime report” from the Toronto Open Data Portal[@rOpenDataToronto]. The dataset includes all crimes that happened in Toronto from 2014 to 2022. It includes 1110 observations and nine variables; there are four interested variables we will choose to do further analysis, “year,” “crime type,” “sex,” and “age group.” Data was cleaned and analyzed using the open source statistically programming language R [@r], and additional packages from `tidyverse` [@rTidyverse], `ggplot2` [@rGgplot2], `janitor` [@rJanitor], here[@rhere], and `knitr` [@rKnitr]. The cleaned dataset contains 1110 observations, and four variables will be shown below.
 
 ```{r echo=FALSE, message=FALSE, label="tbl-cleaned"}
 #| tbl-cap: "First Ten Rows of Cleaned Toronto Crime Data"
-toronto_crime_clean = read_csv(file = "/Users/benli/sta-302-toronto_crime-report/inputs/data/toronto_crime_clean.csv", show_col_types = FALSE)
+toronto_crime_clean = read_csv(
+    file = here("inputs/data/toronto_crime_clean.csv"), show_col_types = FALSE)
 
 kable(head(toronto_crime_clean, 10))
 
@@ -106,7 +110,7 @@ ggplot(sex_counts_df, aes(x = Var1, y = Freq, fill = Var1)) +
 
 
 
-@fig-crime-by-sex shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. Figure 3 shows there is a considerable difference between males and females. Males have around 510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. Figure 3 indicates males and females have similar changes to commit crimes.
+@fig-crime-by-sex shows the distribution of crimes by sex in Toronto. Based on human common sense, males tend to have more crime probability than females. @fig-crime-by-sex shows there is a considerable difference between males and females. Males have around 510 crimes in total from 2014 to 2022 in Toronto; females have around 460 crimes from 2014 to 2022 in Toronto, and around 125 crimes from 2014 to 2022 in Toronto. @fig-crime-by-sex indicates males and females have similar changes to commit crimes.
 
 ```{r echo=FALSE, message=FALSE,fig.cap="Distribution of Crimes by Age Group in Toronto", fig.width=6, fig.height=3, label= "fig-crime-by-age"}
 knitr::opts_chunk$set(fig.pos = 'H')
@@ -126,8 +130,8 @@ ggplot(age_group_df, aes(x = reorder(Var1, -Freq), y = Freq, fill = Var1)) +
 @fig-crime-by-age visualizes the distribution of crime by age group in Toronto from 2014 to 2022. The dominant age group is adults. The number of crimes of adults in Toronto from 2014 to 2022 is about 780 cases. The second largest group is unknown, which means the police did not find out the criminal. Children and youth have a similar share of the number of crimes. Both age groups have around 90 cases of crimes.
 
 # Discussion
-By analyzing the database of Toronto crime reports, we find no significant difference in the probability of committing crimes between males and females. At the same time, adults have the highest percentage of crimes. Looking at Figure 1, we have found out that the number of crimes in Toronto is in a general increasing trend, which shows that the policing in Toronto is not under effective control. Looking at Figure 3, we can find that the total number of crime cases for boys and girls is roughly similar from 2014 to 2022, which shows that boys do not have a higher probability of committing crimes than girls. Future studies can consider the influence of other factors on crime cases.
+By analyzing the database of Toronto crime reports, we find no significant difference in the probability of committing crimes between males and females. At the same time, adults have the highest percentage of crimes. Looking at @fig-crime-trend, we have found out that the number of crimes in Toronto is in a general increasing trend, which shows that the policing in Toronto is not under effective control. Looking at @fig-crime-by-sex, we can find that the total number of crime cases for boys and girls is roughly similar from 2014 to 2022, which shows that boys do not have a higher probability of committing crimes than girls. Future studies can consider the influence of other factors on crime cases.
 
-Figure 4 gives us a deeper understanding of the distribution of different age groups in crime cases. Adults dominate the number of crimes, but juvenile crime is not insignificant, with the eight-year total of crimes committed by children and youth from 2014 to 2022 being about 100 each. This shows the prevalence of juvenile crime. By paying attention to the mental health of adolescents, such as family conflicts and academic pressures, and providing them with the necessary help, juvenile delinquency can be prevented. Also, the government can take measures such as increasing investment in education, providing psychological counselling, and strengthening supervision.
+@fig-crime-by-age gives us a deeper understanding of the distribution of different age groups in crime cases. Adults dominate the number of crimes, but juvenile crime is not insignificant, with the eight-year total of crimes committed by children and youth from 2014 to 2022 being about 100 each. This shows the prevalence of juvenile crime. By paying attention to the mental health of adolescents, such as family conflicts and academic pressures, and providing them with the necessary help, juvenile delinquency can be prevented. Also, the government can take measures such as increasing investment in education, providing psychological counselling, and strengthening supervision.
 
 # Reference
